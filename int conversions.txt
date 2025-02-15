@@ -1,0 +1,35 @@
+# int()  function  demo  program
+print(int(10.8)) #  Converts  10.8  to  10
+print(int(True))  #  Converts  True  to  1
+print(int(False)) # Converts  False   to  10
+print(int('25'))  #25  
+print(int('0075')) # 75
+print(int(0B11010)) # 26
+print(0B11010)# 26
+print(int(0O6247)) # 3239
+print(0O6247) # 3239
+print(int(0XA7B9)) # 42937
+print(0XA7B9) # 42937
+print(int(3 + 4j))TypeError: can't convert complex to int
+print(int('25.4'))  error : Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    print(int('25.4'))
+ValueError: invalid literal for int() with base 10: '25.4'
+
+-----
+ When you try to convert the string '25.4' to an
+ integer using the int() function in Python, 
+you will encounter a ValueError. This is because 
+'25.4' is a floating-point
+ number, and int() cannot directly convert
+ strings that represent 
+ non-integer values
+---
+print(int('Ten'))  # ValueError: invalid literal for int() with base 10: 'Ten'
+
+
+
+'''
+int()  function
+----------------
+1) What  does  int(x)  do  ?  --->  Converts  object  'x'  to  integer

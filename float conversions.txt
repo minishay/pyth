@@ -1,0 +1,11 @@
+print(float(25))          # Converts 25 to 25.0
+print(float(True))        # Converts True to 1.0
+print(float(False))       # Converts False to 0.0
+print(float('92'))        # Converts the string '92' to 92.0
+print(float('36.4'))      # Converts the string '36.4' to 36.4
+print(float('0075'))      # Converts the string '0075' to 75.0 (leading zeros are ignored)
+print(float(0B1010101))   # Converts the binary 0B1010101 (which is 85 in decimal) to 85.0
+print(float(0O6247))      # Converts the octal 0O6247 (which is 3239 in decimal) to 3239.0
+print(float(0XA7B9))      # Converts the hexadecimal 0XA7B9 (which is 42937 in decimal) to 42937.0
+print(float(3 + 4j))      # can't convert complex to float
+print(float('Ten'))       # Raises ValueError: could not convert string to float: 'Ten'

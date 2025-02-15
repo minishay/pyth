@@ -1,0 +1,17 @@
+a = []
+print(a)  # Outputs: []
+
+'''
+a.append(25)
+a.append(10.8)
+a.append('Hyd')
+a.append(True)
+print(a)  # Outputs: [25, 10.8, 'Hyd', True]
+
+''
+
+a.remove('Hyd')
+print(a)  # Outputs: [25, 10.8, True]
+
+''
+a.remove('25')  # Raises ValueError: list.remove(x): x not in list

@@ -1,0 +1,13 @@
+print(bool(0))           # False - 0 is considered False.
+print(bool(10))          # True - Non-zero integers are considered True.
+print(bool(-25))         # True - Non-zero integers (negative or positive) are considered True.
+print(bool(0.0))         # False - 0.0 is considered False.
+print(bool(0.1))         # True - Non-zero floats are considered True.
+print(bool(0 + 0j))      # False - A complex number with both real and imaginary parts as zero is considered False.
+print(bool(10 + 20j))    # True - Any complex number with non-zero real or imaginary parts is considered True.
+print(bool(-15j))        # True - Non-zero imaginary part in a complex number is considered True.
+print(bool('False'))     # True - Non-empty strings are considered True, regardless of their content.
+print(bool(''))          # False - Empty strings are considered False.
+print(bool('Hyd'))       # True - Non-empty strings are considered True.
+print(bool(' '))         # True - Non-empty strings (including strings with just spaces) are considered True.
+print(bool('True'))      # True - Non-empty strings are considered True.

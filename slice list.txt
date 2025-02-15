@@ -1,0 +1,17 @@
+# Define the list
+lst = [25, 10.8, 3 + 4j, 'Hyd', True, None, 10.8, 'Hyd']
+
+# List slicing operations
+print(lst[2:7])       # [3 + 4j, 'Hyd', True, None, 10.8]
+print(lst[:])         # [25, 10.8, 3 + 4j, 'Hyd', True, None, 10.8, 'Hyd']
+print(lst[::])        # [25, 10.8, 3 + 4j, 'Hyd', True, None, 10.8, 'Hyd']
+print(lst[::-1])      # ['Hyd', 10.8, None, True, 'Hyd', 3 + 4j, 10.8, 25]
+print(lst[::2])       # [25, 3 + 4j, True, 10.8]
+print(lst[1::2])      # [10.8, 'Hyd', None, 'Hyd']
+print(lst[::-2])      # ['Hyd', None, 'Hyd', 25]
+print(lst[-2::-2])    # [10.8, 'Hyd', 10.8, 25]
+print(lst[1:4])       # [10.8, 3 + 4j, 'Hyd']
+print(lst[-4:-1])     # [True, None, 10.8]
+print(lst[3:-3])      # ['Hyd', True]
+print(lst[2:-5])      # [3 + 4j]
+print(lst[-1:-5])     # []

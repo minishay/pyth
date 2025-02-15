@@ -1,0 +1,3 @@
+print(hex(25))                # '0x19' - Converts the integer 25 to the hexadecimal representation '0x19'
+print(hex(0B10101111010111))  # '0x2f57' - Converts the binary 0B10101111010111 (which is 11223 in decimal) to the hexadecimal representation '0x2f57'
+print(hex(0O6247))            # '0xcaf' - Converts the octal 0O6247 (which is 3239 in decimal) to the hexadecimal representation '0xcaf'

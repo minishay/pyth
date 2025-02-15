@@ -1,0 +1,7 @@
+# Define the list
+a = [10, 20, 30, 40, 50]
+print(a)  # [10, 20, 30, 40, 50]
+
+# Update the list from index 1 to 3 with new values [60, 70, 80]
+a[1:4] = [60, 70, 80]   -- > ?
+print(a)  # [10, 60, 70, 80, 50]

@@ -1,0 +1,44 @@
+a = range(10, 50, 5)
+print(type(a))           # <class 'range'>
+print(a)                 # range(10, 50, 5)
+print(*a)                # 10 15 20 25 30 35 40 45
+print(id(a))             # Memory address of the range object
+print(len(a))            # 8
+print(*a[2:7], sep=' , ') # 20 , 25 , 30 , 35 , 40
+print(*a[::-1])          # 45 40 35 30 25 20 15 10
+
+
+a = range(10, 20)
+print(*a, sep=',')  # Outputs: 10,11,12,13,14,15,16,17,18,19
+
+b = range(5)
+print(*b)  # Outputs: 0 1 2 3 4
+
+c = range(10, 1, -1)
+print(*c, sep='...')  # Outputs: 10...9...8...7...6...5...4...3...2
+
+d = range(-10, 0)
+print(*d)  # Outputs: -10 -9 -8 -7 -6 -5 -4 -3 -2 -1
+
+e = range(-10)
+print(*e)  # Outputs: No output because the range is empty
+
+f = range(2, 2)
+print(*f)  # Outputs: No output because the range is empty
+
+
+Errrors :
+g = range(10, 11, 0.1)  # Raises TypeError: 'float' object cannot be interpreted as an integer
+
+h = range('A', 'F')  # Raises TypeError: 'str' object cannot be interpreted as an integer
+---
+a = [25, 10.8, 'Hyd', True, 3 + 4j, None, 'Hyd', 25]
+print(a)                  # [25, 10.8, 'Hyd', True, (3+4j), None, 'Hyd', 25]
+print(*a)                 # 25 10.8 Hyd True (3+4j) None Hyd 25
+print(type(a))            # <class 'list'>
+print(id(a))              # Memory address of the list
+print(len(a))             # 8
+
+a[2] = 'Sec'
+print(a)                  # [25, 10.8, 'Sec', True, (3+4j), None, 'Hyd', 25]
+print(a[2:5])             # ['Sec', True, (3+4j)]

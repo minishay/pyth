@@ -1,0 +1,16 @@
+print(complex(3, 4))            # (3+4j) - Creates a complex number with real part 3 and imaginary part 4.
+print(complex(0, 4))            # 4j - Creates a complex number with real part 0 and imaginary part 4.
+print(complex(3))               # (3+0j) - Creates a complex number with real part 3 and imaginary part 0.
+print(complex(3.8, 4.6))        # (3.8+4.6j) - Creates a complex number with real part 3.8 and imaginary part 4.6.
+print(complex(3.8))             # (3.8+0j) - Creates a complex number with real part 3.8 and imaginary part 0.
+print(complex(3, 4.5))          # (3+4.5j) - Creates a complex number with real part 3 and imaginary part 4.5.
+print(complex(True, False))     # (1+0j) - True is converted to 1 and False is converted to 0.
+print(complex(True))            # (1+0j) - True is converted to 1.
+print(complex(False))           # 0j - False is converted to 0.
+print(complex(True, 4))         # (1+4j) - True is converted to 1 and 4 as the imaginary part.
+print(complex('3'))             # (3+0j) - String '3' is converted to the real part 3 with imaginary part 0.
+print(complex('3.8'))           # (3.8+0j) - String '3.8' is converted to the real part 3.8 with imaginary part 0.
+print(complex(3, '4'))          #  TypeError: complex() second argument must be a number, not str
+print(complex('3', 4))          #  TypeError: complex() first argument must be a string or a number, not 'str'
+print(complex('3', '4'))        #  TypeError: complex() second argument must be a number, not str
+print(complex('Ten'))           # ValueError: could not convert string to complex: 'Ten'

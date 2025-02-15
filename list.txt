@@ -1,0 +1,35 @@
+a = [25, 10.8, 'Hyd']
+print(a * 3)  # [25, 10.8, 'Hyd', 25, 10.8, 'Hyd', 25, 10.8, 'Hyd']
+print(a * 2)  # [25, 10.8, 'Hyd', 25, 10.8, 'Hyd']
+print(a * 1)  # [25, 10.8, 'Hyd']
+print(a * 0)  # []
+print(a * -1) # []
+
+# The following line will raise a TypeError
+# print(a * 4.0)  # Raises TypeError: can't multiply sequence by non-int of type 'float'
+''
+
+a = list('Hyd')
+print(a)  # ['H', 'y', 'd']
+print(type(a))  # <class 'list'>
+print(len(a))  # 3
+
+b = (10, 20, 15, 18)
+print(list(b))  # [10, 20, 15, 18]
+
+print(list(range(5)))  # [0, 1, 2, 3, 4]
+
+# The following line will raise a TypeError
+# print(list(25))  # Raises TypeError: 'int' object is not iterable
+''
+
+a = []
+print(type(a))  # <class 'list'>
+print(a)        # [] -- empty list
+print(len(a))   # 0 -- bcz list is empty
+
+b = list()
+print(b)        # [] -- empty list
+print(len(b))   # 0
+''
+

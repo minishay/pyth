@@ -1,0 +1,3 @@
+print(oct(195))              # '0o303' - Converts the integer 195 to the octal representation '0o303'
+print(oct(0B10101110010))    # '0o1272' - Converts the binary 0B10101110010 (which is 1394 in decimal) to the octal representation '0o1272'
+print(oct(0xA7B9))           # '0o24771' - Converts the hexadecimal 0xA7B9 (which is 42937 in decimal) to the octal representation '0o24771'

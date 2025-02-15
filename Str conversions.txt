@@ -1,0 +1,7 @@
+print(str(25))      # '25' - Converts the integer 25 to the string '25'
+print(str(10.8))    # '10.8' - Converts the float 10.8 to the string '10.8'
+print(str(3 + 4j))  # '(3+4j)' - Converts the complex number 3 + 4j to the string '(3+4j)'
+print(str(True))    # 'True' - Converts the boolean True to the string 'True'
+print(str(False))   # 'False' - Converts the boolean False to the string 'False'
+print(str(None))    # 'None' - Converts the NoneType value None to the string 'None'
+
