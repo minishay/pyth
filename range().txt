@@ -32,6 +32,8 @@ g = range(10, 11, 0.1)  # Raises TypeError: 'float' object cannot be interpreted
 
 h = range('A', 'F')  # Raises TypeError: 'str' object cannot be interpreted as an integer
 ---
+
+list __ square brackets
 a = [25, 10.8, 'Hyd', True, 3 + 4j, None, 'Hyd', 25]
 print(a)                  # [25, 10.8, 'Hyd', True, (3+4j), None, 'Hyd', 25]
 print(*a)                 # 25 10.8 Hyd True (3+4j) None Hyd 25
